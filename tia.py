@@ -40,7 +40,7 @@ def get_data(url, params, headers):
 
     for page in range(1, 31):
         print(f"Page: {page}/30", end='\r')
-        req = requests.get(url=url + params + str(page), headers=headers)
+        req = requests.get(url=base_url + params + str(page), headers=headers)
         json = req.json()
 
         for idx, post in enumerate(json['posts']):
