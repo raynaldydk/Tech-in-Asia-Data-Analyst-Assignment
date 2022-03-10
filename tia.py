@@ -21,7 +21,7 @@ def clean_tags(text):
     clean_text
     '''
     pattern = re.compile('<.*?>')
-    clean_text = re.sub(pattern, '', text).replace('\n', '').replace('\xa0', '')
+    clean_text = re.sub(pattern, '', text)
     return clean_text
 
 def get_data(url, params, headers):
@@ -47,33 +47,14 @@ def get_data(url, params, headers):
             data = {
                 'id': post['id'],
                 'date_gmt': post['date_gmt'],
-                'modified_gmt': post['modified_gmt'],
                 'title': post['title'],
-                'slug': post['slug'],
-                'status': post['status'],
-                'type': post['type'],
-                'link': post['link'],
                 'content': clean_tags(json['posts'][idx]['content']),
-                'vsitems': post['vsitems'],
-                'live_items': post['live_items'],
-                'excerpt': post['excerpt'],
-                'author_id': post['author']['id'],
                 'author_name': post['author']['display_name'],
-                'author_is_staff': post['author']['is_staff'],
                 'editor': post['editor'].replace('Editing by ', ''),
-                'comment_status': post['comment_status'],
                 'comments_count': post['comments_count'],
-                'comments': post['comments'],
                 'categories': [cat['name'] for cat in json['posts'][idx]['categories']],
-                'tags': [tag['name'] for tag in json['posts'][idx]['tags']],
-                'companies': post['companies'],
-                'is_sponsored': post['is_sponsored'],
-                'sponsor_name': post['sponsor']['name'],
-                'is_partnership': post['is_partnership'],
                 'show_ads': post['show_ads'],
                 'is_subscriber_exclusive': post['is_subscriber_exclusive'],
-                'is_paywalled': post['is_paywalled'],
-                'is_inappbrowser': post['is_inappbrowser'],
                 'read_time': post['read_time']
             }
             all_data.append(data)
@@ -102,23 +83,13 @@ def auto_get(url, params, headers):
             'id': post['id'],
             'date_gmt': post['date_gmt'],
             'title': post['title'],
-            'slug': post['slug'],
-            'type': post['type'],
             'content': clean_tags(json['posts'][idx]['content']),
-            'excerpt': post['excerpt'],
-            'author_id': post['author']['id'],
             'author_name': post['author']['display_name'],
-            'author_is_staff': post['author']['is_staff'],
             'editor': post['editor'].replace('Editing by ', ''),
             'comments_count': post['comments_count'],
             'categories': [cat['name'] for cat in json['posts'][idx]['categories']],
-            'tags': [tag['name'] for tag in json['posts'][idx]['tags']],
-            'is_sponsored': post['is_sponsored'],
-            'sponsor_name': post['sponsor']['name'],
             'show_ads': post['show_ads'],
             'is_subscriber_exclusive': post['is_subscriber_exclusive'],
-            'is_paywalled': post['is_paywalled'],
-            'is_inappbrowser': post['is_inappbrowser'],
             'read_time': post['read_time']
         }
         all_data.append(data)      
