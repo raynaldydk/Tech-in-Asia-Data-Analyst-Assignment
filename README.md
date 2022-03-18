@@ -1,7 +1,7 @@
 # Tech in Asia - Data Analyst Assignment: 
 ## Overview
 * Create a script to collect data from REST API
-* Create a script to collect data automatically using date as filter
+* Create a script to collect data automatically
 * Understanding the data & removing unecessary features
 * Perform an EDA in Tableau (https://public.tableau.com/app/profile/raynaldy.dwi.k/viz/TIAArticles/TIAArticlesAnalysis)
 * Create a WordCloud and some more EDA in pandas
@@ -31,7 +31,7 @@
 2) Distributions of Articles by category are very good, only missing articles about TIA Jobs & Recruitment
 3) Saturday are the days that have higher average comments, we only posts a few articles in Saturday, maybe we can automate more articles in Saturday
 4) There are some unusual behavior that people tends to comment more on Monday night
-5) 5/10 of our top 10 authors are heavily Indian based articles, we need to get more articles about other Asia countries too
+5) 6/10 of our top 10 authors are heavily Indian based articles, we need to get more articles about other Asia countries too
 6) In the sentiment analysis we can see that TIA bots have the highest positive value and the most opiniated author
 7) In the other hand Roehl are the most negative but most of them are facts
 8) LDA model doesn't really capture the topics, the topics generated are quite similar. Maybe I will get a better result using different techniques
