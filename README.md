@@ -33,4 +33,4 @@
 5) 5/10 of our top 10 authors are heavily Indian based articles, we need to get more articles about other SEA countries too
 6) In the sentiment analysis we can see that TIA bots have the highest positive value and the most opiniated author
 7) In the other hand Roehl are the most negative but most of them are facts
-8) LDA model doesn't really capture the topics, they are quite similary, so I'm not sure how to make it like what I expected.
+8) LDA model doesn't really capture the topics, the topics generated are quite similar. Maybe I will get a better result using different techniques
