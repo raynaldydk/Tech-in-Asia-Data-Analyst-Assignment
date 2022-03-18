@@ -3,7 +3,7 @@
 * Create a script to collect data from REST API
 * Create a script to collect data automatically using date as filter
 * Understanding the data & removing unecessary features
-* Perform an EDA in Tableau
+* Perform an EDA in Tableau (https://public.tableau.com/app/profile/raynaldy.dwi.k/viz/TIAArticles/TIAArticlesAnalysis)
 * Create a WordCloud and some more EDA in pandas
 * Create a dashboard & stories using Tableau
 * Preprocessing the data for NLP techniques
@@ -14,6 +14,7 @@
 ![articles_distribution](https://user-images.githubusercontent.com/96482347/158934603-b7233a94-700f-4a6d-a1cd-874e76245adc.png)
 ![avg_comment_by_cat](https://user-images.githubusercontent.com/96482347/158934614-ad90bcd7-1694-474c-8437-d080396109dd.png)
 ![avg_comment_day_hour](https://user-images.githubusercontent.com/96482347/158934624-872c9a35-cdff-43ff-ac6a-5dad98762f74.png)
+![article_vs_comments](https://user-images.githubusercontent.com/96482347/158943017-9504103a-31b1-42e2-95bc-eca17d8ad9ff.png)
 ![wordcloud](https://user-images.githubusercontent.com/96482347/158934633-e9900322-a372-416f-8b84-843295cbc2f5.png)
 
 ## Sentiment Analysis
